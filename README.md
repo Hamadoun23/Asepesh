@@ -26,18 +26,19 @@ Asepesh/
 └── docs/                 Manuel de procédures (PDF, lié depuis le site)
 ```
 
-## 2. À compléter avant la mise en ligne
+## 2. Coordonnées et paramètres
 
 Tout se trouve dans **`js/config.js`** — un seul fichier, répercuté sur les six pages :
 
-| Champ | Valeur actuelle | À remplacer par |
-|---|---|---|
-| `tel` / `telLien` | `+223 00 00 00 00` | Le numéro réel (`telLien` sans espaces, pour WhatsApp) |
-| `email` | `contact@asepesh-mali.org` | L'adresse réelle de l'association |
-| `adresse` | `Bamako, Mali` | L'adresse complète du siège |
-| `horaires` | horaires du manuel | À confirmer |
-| `facebook` | vide | L'URL de la page Facebook (laisser vide masque l'icône) |
-| `cotisation` | `à fixer en Assemblée Générale` | Le montant décidé en AG |
+| Champ | Valeur actuelle |
+|---|---|
+| `tel` / `telLien` | `+223 75 87 55 11` — numéro principal, utilisé aussi pour WhatsApp et les formulaires |
+| `tel2` / `telLien2` | `+223 64 90 11 84` — second numéro (laisser vide pour le masquer) |
+| `email` | `asepeshmali@gmail.com` |
+| `adresse` | `Bamako, Mali` — à préciser |
+| `horaires` | horaires du manuel — à confirmer |
+| `facebook` | vide (laisser vide masque l'icône) |
+| `cotisation` | `à fixer en Assemblée Générale` |
 
 À vérifier également :
 

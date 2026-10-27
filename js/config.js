@@ -12,10 +12,12 @@ window.ASEPESH = {
   nomLong: "Association Soutien et Espoir aux Parents d'Enfants en Situation de Handicap au Mali",
   slogan: "Aucun parent seul, aucun enfant oublié.",
 
-  /* --- Coordonnées : à compléter --- */
-  tel: "+223 00 00 00 00",
-  telLien: "+22300000000",          // sans espace, pour les liens tel: et wa.me
-  email: "contact@asepesh-mali.org",
+  /* --- Coordonnées --- */
+  tel: "+223 75 87 55 11",
+  telLien: "+22375875511",          // sans espace, pour les liens tel: et wa.me (numéro WhatsApp)
+  tel2: "+223 64 90 11 84",         // second numéro, laisser "" pour le masquer
+  telLien2: "+22364901184",
+  email: "asepeshmali@gmail.com",
   adresse: "Bamako, Mali",
   horaires: "Lundi – jeudi : 8h00 – 16h30 · Vendredi : 7h30 – 16h00",
 

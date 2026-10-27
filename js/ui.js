@@ -46,6 +46,13 @@
 
   function icon(name) { return ICONS[name] || ""; }
 
+  // Les deux numéros, chacun avec son lien d'appel
+  function telLinks() {
+    var html = '<a href="tel:' + CFG.telLien + '">' + CFG.tel + "</a>";
+    if (CFG.tel2) html += ' / <a href="tel:' + CFG.telLien2 + '">' + CFG.tel2 + "</a>";
+    return html;
+  }
+
   // Remplit tous les <span data-icon="…">
   function paintIcons(root) {
     (root || document).querySelectorAll("[data-icon]").forEach(function (el) {
@@ -283,7 +290,7 @@
             "<h4>Siège — Bamako</h4>" +
             '<ul class="footer-office">' +
               "<li>" + icon("pin") + "<span>" + CFG.adresse + "</span></li>" +
-              "<li>" + icon("phone") + '<a href="tel:' + CFG.telLien + '">' + CFG.tel + "</a></li>" +
+              "<li>" + icon("phone") + "<span>" + telLinks() + "</span></li>" +
               "<li>" + icon("mail") + '<a href="mailto:' + CFG.email + '">' + CFG.email + "</a></li>" +
               "<li>" + icon("clock") + "<span>" + CFG.horaires + "</span></li>" +
             "</ul>" +
@@ -593,6 +600,7 @@
       if (v) el.textContent = v;
     });
     document.querySelectorAll("[data-tel]").forEach(function (el) { el.href = "tel:" + CFG.telLien; });
+    document.querySelectorAll("[data-tels]").forEach(function (el) { el.innerHTML = telLinks(); });
     document.querySelectorAll("[data-mail]").forEach(function (el) { el.href = "mailto:" + CFG.email; });
     document.querySelectorAll("[data-wa-link]").forEach(function (el) {
       el.href = waLink(el.getAttribute("data-wa-link") || "general");
